@@ -1,0 +1,207 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #0D0D0D;
+  --color-foreground: #F5F5F0;
+  --color-purple: #F97316;
+  --color-purple-hover: #2563EB;
+  --color-dark: #111111;
+  --color-card: #1A1A1A;
+  --color-footer: #0A0A0A;
+  --color-light: #F5F5F0;
+  --font-sans: var(--font-inter);
+}
+
+/* Base */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0D0D;
+}
+::-webkit-scrollbar-thumb {
+  background: #F97316;
+  border-radius: 3px;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Two-row logo marquee */
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-right {
+  animation: marquee-right 35s linear infinite;
+}
+
+.animate-marquee-left {
+  animation: marquee-left 35s linear infinite;
+}
+
+.animate-marquee-right:hover,
+.animate-marquee-left:hover {
+  animation-play-state: paused;
+}
+
+/* Hero background animation */
+@keyframes hue-shift {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.hero-bg {
+  background: radial-gradient(ellipse at 30% 50%, rgba(59,130,246, 0.15) 0%, transparent 50%),
+              radial-gradient(ellipse at 70% 50%, rgba(59,130,246, 0.08) 0%, transparent 50%);
+  animation: hue-shift 20s linear infinite;
+}
+
+/* Bouncing scroll indicator */
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
+}
+
+/* Underline slide-in for nav links */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #F97316;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Floating label */
+.floating-label-group {
+  position: relative;
+}
+
+.floating-label-group label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: rgba(245, 245, 240, 0.4);
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.floating-label-group textarea ~ label {
+  top: 20px;
+  transform: translateY(0);
+}
+
+.floating-label-group input:focus ~ label,
+.floating-label-group input:not(:placeholder-shown) ~ label,
+.floating-label-group textarea:focus ~ label,
+.floating-label-group textarea:not(:placeholder-shown) ~ label,
+.floating-label-group select:focus ~ label,
+.floating-label-group select:valid ~ label {
+  top: 8px;
+  transform: translateY(0);
+  font-size: 10px;
+  color: #F97316;
+}
+
+/* Custom cursor styles */
+.custom-cursor {
+  width: 36px;
+  height: 36px;
+  border: 2px solid #F97316;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.15s ease;
+  mix-blend-mode: difference;
+}
+
+.custom-cursor.hovered {
+  transform: scale(1.5);
+}
+
+/* Process line animation */
+@keyframes draw-line {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.draw-line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw-line 1.5s ease forwards;
+}
