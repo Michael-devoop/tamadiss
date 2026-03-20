@@ -14,8 +14,8 @@ export default function Hero() {
           playsInline
           className="absolute inset-0 w-full h-full object-fill"
         >
-          <source src="/herov2.mov" type="video/quicktime" />
-          <source src="/herov2.mov" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dkceowz64/video/upload/v1774009758/herov2_frdnar.mov" type="video/quicktime" />
+          <source src="https://res.cloudinary.com/dkceowz64/video/upload/v1774009758/herov2_frdnar.mov" type="video/mp4" />
         </video>
         {/* Dark vignette overlay similar to design */}
         <div className="absolute inset-0 bg-black/40" />

@@ -42,7 +42,7 @@ export default function Services() {
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
-          src="/project3.mp4"
+          src="https://res.cloudinary.com/dkceowz64/video/upload/v1774012985/project3_1_gzwmvz.mp4"
         />
         
         {/* Dark overlay to make text highly readable */}

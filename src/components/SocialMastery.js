@@ -10,42 +10,42 @@ const works = [
     category: "TIKTOK / VIRAL",
     title: "Yura",
     desc: "Local Tour And Travel Agency",
-    video: "/project1.mp4",
+    video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774009666/project1_wr6onb.mp4",
   },
   {
     id: 2,
     category: "REELS / COSME",
     title: "Cosmee",
     desc: "Well Known Cosmetics Industries in...",
-    video: "/project2.mp4",
+    video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774010475/project2_bvxae5.mp4",
   },
   {
     id: 3,
     category: "JOB APPLICATIONS / FREELANCE",
     title: "Careers",
     desc: "A showcase of our most successful job...",
-    video: "/project3.mp4",
+    video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774012985/project3_1_gzwmvz.mp4",
   },
   {
     id: 4,
     category: "CAMPAIGN / BRANDING",
     title: "Focus",
     desc: "Creative Direction for modern brands",
-    video: "/project4.mp4",
+    video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774012098/project4_dppiyo.mp4",
   },
   {
     id: 5,
     category: "COMMERCIAL / TVC",
     title: "Elevate",
     desc: "High end commercial production",
-    video: "/project5.mp4",
+    video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774010575/project5_hr1wun.mp4",
   },
   {
     id: 6,
     category: "SOCIAL / ENGAGEMENT",
     title: "Boost",
     desc: "Driving organic growth through motion",
-    video: "/project6.mp4",
+    video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774010552/project6_rqvtee.mp4",
   }
 ];
 
