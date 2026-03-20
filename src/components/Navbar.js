@@ -60,20 +60,18 @@ export default function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 flex justify-center ${
-          scrolled ? "pt-4 px-4 md:px-8 lg:px-16" : "pt-0 px-0"
-        }`}
-      >
-        <div 
-          className={`w-full max-w-7xl flex items-center justify-between transition-all duration-500 ${
-            scrolled 
-              ? "bg-black/20 backdrop-blur-md border border-white/10 rounded-full px-6 md:px-8 py-3 shadow-[0_10px_40px_rgba(0,0,0,0.8)]" 
-              : "bg-transparent border-transparent px-6 md:px-16 lg:px-24 py-8"
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 flex justify-center ${scrolled ? "pt-4 px-4 md:px-8 lg:px-16" : "pt-0 px-0"
           }`}
+      >
+        <div
+          className={`w-full max-w-7xl flex items-center justify-between transition-all duration-500 ${scrolled
+              ? "bg-black/20 backdrop-blur-md border border-white/10 rounded-full px-6 md:px-8 py-3 shadow-[0_10px_40px_rgba(0,0,0,0.8)]"
+              : "bg-transparent border-transparent px-6 md:px-16 lg:px-24 py-8"
+            }`}
         >
           {/* Logo */}
           <a href="/" className="flex items-center">
-            <span className="text-white font-black text-xl md:text-2xl leading-none tracking-[0.15em] uppercase">TAM ADDISS</span>
+            <span className="text-white font-black text-xl md:text-2xl leading-none tracking-[0.15em] uppercase">TAMADISS</span>
           </a>
 
           {/* Desktop Nav */}
@@ -84,9 +82,8 @@ export default function Navbar() {
                 <a
                   key={link.label}
                   href={link.href}
-                  className={`relative text-[10px] lg:text-[11px] font-bold uppercase tracking-[0.2em] transition-colors duration-300 ${
-                    isActive ? "text-white" : "text-white/50 hover:text-white"
-                  }`}
+                  className={`relative text-[10px] lg:text-[11px] font-bold uppercase tracking-[0.2em] transition-colors duration-300 ${isActive ? "text-white" : "text-white/50 hover:text-white"
+                    }`}
                 >
                   {link.label}
                   {/* Subtle active underline exactly like the design */}
@@ -139,9 +136,8 @@ export default function Navbar() {
                   setMobileOpen(false);
                   setActiveSection(link.id);
                 }}
-                className={`text-2xl font-bold uppercase tracking-widest transition-colors ${
-                  activeSection === link.id ? "text-[#F97316]" : "text-white hover:text-[#F97316]"
-                }`}
+                className={`text-2xl font-bold uppercase tracking-widest transition-colors ${activeSection === link.id ? "text-[#F97316]" : "text-white hover:text-[#F97316]"
+                  }`}
               >
                 {link.label}
               </motion.a>
