@@ -35,7 +35,7 @@ export default function Hero() {
             TAM
           </h1>
           <h1 className="text-[80px] sm:text-[100px] md:text-[120px] lg:text-[140px] font-black leading-[0.85] tracking-tighter uppercase text-[#F97316]">
-            ADISS
+            ADDIS
           </h1>
         </motion.div>
 

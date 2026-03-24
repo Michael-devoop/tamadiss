@@ -14,6 +14,7 @@ const works = [
     title: "PRODUCT",
     desc: "Product Video Projects",
     video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774009666/project1_wr6onb.mp4",
+    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370699/project1_oto0f0.jpg"
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ const works = [
     title: "Cosmee",
     desc: "Well Known Cosmetics Industries",
     video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774010475/project2_bvxae5.mp4",
+    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370698/project2_h1p7fg.jpg"
   },
   {
     id: 3,
@@ -30,6 +32,7 @@ const works = [
     title: "Careers",
     desc: "A showcase of our most successful jobs",
     video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774012985/project3_1_gzwmvz.mp4",
+    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370699/project3_tpfqym.jpg"
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ const works = [
     title: "Focus",
     desc: "Restaurant Video Projects",
     video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774012098/project4_dppiyo.mp4",
+    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370691/project4_i5bent.jpg"
   },
   {
     id: 5,
@@ -46,6 +50,7 @@ const works = [
     title: "Elevate",
     desc: "Product Video Projects",
     video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774010575/project5_hr1wun.mp4",
+    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370700/project5_zgbgdz.jpg"
   },
   {
     id: 6,
@@ -54,6 +59,7 @@ const works = [
     title: "Boost",
     desc: "Product Video Projects",
     video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774010552/project6_rqvtee.mp4",
+    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370699/project6_fg976n.jpg"
   },
 
   // Group 2: Catering Brand Video Projects (7, 9, 11)
@@ -64,6 +70,7 @@ const works = [
     title: "Identity",
     desc: "Catering Brand Video Projects",
     video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774350582/project7_c2yqiw.mov",
+    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370690/project7_oyxxtm.jpg"
   },
   {
     id: 9,
@@ -72,6 +79,7 @@ const works = [
     title: "Momentum",
     desc: "Catering Brand Video Projects",
     video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774350146/project9_uqi7og.mov",
+    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370689/project9_lkxokd.jpg"
   },
   {
     id: 11,
@@ -80,6 +88,7 @@ const works = [
     title: "Live",
     desc: "Catering Brand Video Projects",
     video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774350070/project11_hwxwcs.mov",
+    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370691/project11_uinq4p.jpg"
   },
 
   // Group 3: Perfume Brand Video Projects (12, 13, 14)
@@ -90,6 +99,7 @@ const works = [
     title: "Connect",
     desc: "Perfume Brand Video Projects",
     video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774349672/project12_nof2en.mp4",
+    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370689/project12_ndih5r.jpg"
   },
   {
     id: 13,
@@ -98,6 +108,7 @@ const works = [
     title: "Detail",
     desc: "Perfume Brand Video Projects",
     video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774349468/project13_u0t1ka.mp4",
+    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370689/project13_a9ezlh.jpg"
   },
   {
     id: 14,
@@ -106,6 +117,7 @@ const works = [
     title: "Culture",
     desc: "Perfume Brand Video Projects",
     video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774349427/project14_egpl0c.mp4",
+    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370688/project14_gjpcji.jpg"
   },
 
   // Group 4: Restaurant Video Projects (8, 10)
@@ -116,6 +128,7 @@ const works = [
     title: "Vision",
     desc: "Coffee Shop Video Projects",
     video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774349559/project8_ihji0z.mp4",
+    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370688/project8_uikcsv.jpg"
   },
   {
     id: 10,
@@ -124,6 +137,7 @@ const works = [
     title: "Atmosphere",
     desc: "Restaurant Video Projects",
     video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774349591/project10_yv8t0h.mp4",
+    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370690/project10_haikqu.jpg"
   },
 
   // Group 5: Coffee Shop Video Projects (15)
@@ -134,6 +148,7 @@ const works = [
     title: "Origin",
     desc: "Coffee Shop Video Projects",
     video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774349362/project15_ql07nk.mp4",
+    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370688/project15_ns99tk.jpg"
   },
   {
     id: 16,
@@ -141,7 +156,7 @@ const works = [
     category: "RESTAURANT",
     title: "Taste",
     desc: "Restaurant Video Projects",
-    video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774355583/project16_npjd54.mp4",
+    video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774355583/project16_npjd54.mp4"
   },
   {
     id: 17,
@@ -150,6 +165,7 @@ const works = [
     title: "Brew",
     desc: "Coffee Shop Video Projects",
     video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774355569/project17_rxqrye.mp4",
+    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370687/project17_surti0.jpg"
   }
 ];
 
@@ -252,9 +268,18 @@ export default function SocialMastery() {
                         loop
                         playsInline
                         preload="metadata"
-                        className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${isPlaying ? "scale-105 brightness-110" : "brightness-[0.6] group-hover:brightness-90 scale-100 group-hover:scale-105"}`}
-                        src={`${work.video}#t=0.001`}
+                        className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${isPlaying ? "scale-105 brightness-110 opacity-100" : "brightness-[0.6] group-hover:brightness-90 scale-100 group-hover:scale-105"} ${!isPlaying && work.poster ? "opacity-0" : "opacity-100"}`}
+                        src={work.poster ? work.video : `${work.video}#t=0.001`}
                       />
+
+                      {/* Explicit Image Poster Overlay */}
+                      {!isPlaying && work.poster && (
+                        <img 
+                          src={work.poster} 
+                          alt={work.title}
+                          className="absolute inset-0 w-full h-full object-cover transition-all duration-700 brightness-[0.6] group-hover:brightness-90 scale-100 group-hover:scale-105 pointer-events-none"
+                        />
+                      )}
 
                       {/* Play Button */}
                       <div

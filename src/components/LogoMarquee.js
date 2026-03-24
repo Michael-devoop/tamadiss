@@ -21,29 +21,11 @@ export default function LogoMarquee() {
       <div className="relative mb-8 overflow-hidden">
         <div className="flex items-center animate-marquee-right whitespace-nowrap">
           {[...row1, ...row1, ...row1, ...row1].map((logo, i) => (
-            <div key={`r1-${i}`} className="flex-shrink-0 mx-6">
+            <div key={`r1-${i}`} className="flex-shrink-0 mx-8">
               <img
                 src={logo}
                 alt={`Client logo ${(i % logos.length) + 1}`}
-                className="h-20 w-20 object-cover rounded-full opacity-70 hover:opacity-100 transition-opacity duration-300"
-                style={{
-                  boxShadow: "0 0 20px 8px rgba(0,0,0,0.7), 0 0 40px 16px rgba(0,0,0,0.4)",
-                }}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Row 2 - scrolls left */}
-      <div className="relative overflow-hidden">
-        <div className="flex items-center animate-marquee-left whitespace-nowrap">
-          {[...row2, ...row2, ...row2, ...row2].map((logo, i) => (
-            <div key={`r2-${i}`} className="flex-shrink-0 mx-6">
-              <img
-                src={logo}
-                alt={`Client logo ${(i % logos.length) + 1}`}
-                className="h-20 w-20 object-cover rounded-full opacity-70 hover:opacity-100 transition-opacity duration-300"
+                className="h-28 w-28 md:h-32 md:w-32 object-cover rounded-full opacity-70 hover:opacity-100 transition-opacity duration-300"
                 style={{
                   boxShadow: "0 0 20px 8px rgba(0,0,0,0.7), 0 0 40px 16px rgba(0,0,0,0.4)",
                 }}

@@ -1,6 +1,6 @@
 "use client";
 
-import { Facebook, Instagram, Linkedin, Music2, Youtube, Send } from "lucide-react";
+import { Instagram, Linkedin, Music2, Send } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Left Column - Brand & About */}
           <div className="flex flex-col">
             <a href="/" className="flex items-center gap-3 mb-6">
-              <span className="text-white font-black text-2xl leading-none tracking-widest uppercase">TAMADISS</span>
+              <span className="text-white font-black text-2xl leading-none tracking-widest uppercase">TAMADDIS</span>
             </a>
             <p className="text-white/60 leading-relaxed font-medium max-w-[90%] md:max-w-sm mb-10 text-sm md:text-base">
               A full-service digital marketing powerhouse in Ethiopia. We blend cinematic production with strategic growth to make your brand impossible to ignore.
@@ -19,13 +19,20 @@ export default function Footer() {
             
             {/* Social Icons */}
             <div className="flex flex-wrap items-center gap-4">
-              {[Facebook, Instagram, Linkedin, Music2, Youtube, Send].map((Icon, idx) => (
+              {[
+                { Icon: Instagram, href: "https://www.instagram.com/tam__addia?igsh=anU4MHBpMHZ4aXJx" },
+                { Icon: Music2, href: "https://www.tiktok.com/@tamaddis2?_r=1&_t=ZS-94xYtFY5197" },
+                { Icon: Send, href: "https://t.me/tamirat_Aby" },
+                { Icon: Linkedin, href: "#" }
+              ].map((social, idx) => (
                 <a 
                   key={idx} 
-                  href="#" 
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#F97316] hover:border-[#F97316] hover:text-black text-white transition-all duration-300"
                 >
-                  <Icon size={16} />
+                  <social.Icon size={16} />
                 </a>
               ))}
             </div>
@@ -72,7 +79,9 @@ export default function Footer() {
                  Ready to elevate your brand content? Message us directly on Telegram for a quick quote.
                </p>
                <a 
-                 href="#"
+                 href="https://t.me/tamirat_Aby"
+                 target="_blank"
+                 rel="noopener noreferrer"
                  className="w-full bg-[#F97316] hover:bg-orange-500 text-black font-bold uppercase tracking-[0.15em] text-[11px] py-4 rounded-full transition-all text-center shadow-[0_4px_20px_rgba(249,115,22,0.3)]"
                >
                  Chat With An Expert
@@ -85,7 +94,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-white/30 text-[10px] md:text-xs font-medium tracking-[0.15em] uppercase text-center">
-            © {new Date().getFullYear()} TAMADISS. ALL RIGHTS RESERVED.
+            © {new Date().getFullYear()} TAMADDIS. ALL RIGHTS RESERVED.
           </p>
           <div className="flex items-center gap-6 md:gap-8">
             <a href="#" className="text-white/30 hover:text-white text-[10px] md:text-xs font-medium tracking-[0.15em] uppercase transition-colors">Privacy Policy</a>

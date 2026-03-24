@@ -71,7 +71,7 @@ export default function Navbar() {
         >
           {/* Logo */}
           <a href="/" className="flex items-center">
-            <span className="text-white font-black text-xl md:text-2xl leading-none tracking-[0.15em] uppercase">TAMADISS</span>
+            <span className="text-white font-black text-xl md:text-2xl leading-none tracking-[0.15em] uppercase">TAMADDIS</span>
           </a>
 
           {/* Desktop Nav */}

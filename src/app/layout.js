@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "TAMADISS — Creative Digital Agency",
+  title: "TAMADDIS — Creative Digital Agency",
   description:
-    "We build digital experiences that last. Branding, Web Design, Motion, and Strategy by TAMADISS.",
+    "We build digital experiences that last. Branding, Web Design, Motion, and Strategy by TAMADDIS.",
 };
 
 export default function RootLayout({ children }) {

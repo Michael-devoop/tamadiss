@@ -18,7 +18,7 @@ export default function ImageCardSection() {
             Crafted <br />
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FF7A59] to-[#F97316]">Moments</span> <br />
             by <br />
-            Tamaddis
+            TAMADDIS
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -51,11 +51,8 @@ export default function ImageCardSection() {
             />
             {/* Gradient overlay for text legibility */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20" />
-            
-            <div className="absolute bottom-6 left-6 right-6 z-20">
-              <div className="w-12 h-1 bg-[#F97316] mb-3" />
-              <p className="text-white font-semibold tracking-wider text-sm uppercase">Cinematic Dept.</p>
-            </div>
+
+
           </motion.div>
 
           {/* Right Card */}
@@ -72,28 +69,15 @@ export default function ImageCardSection() {
               muted
               playsInline
               className="absolute inset-0 w-full h-full object-cover"
-              src="https://res.cloudinary.com/dkceowz64/video/upload/v1774349454/rightcard_nljkuw.mov"
+              src="https://res.cloudinary.com/dkceowz64/video/upload/v1774367483/rightcard_nljkuw.mov"
             />
             {/* Gradient overlay for text legibility */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-transparent" />
-            
-            <div className="absolute top-8 left-0 right-0 z-20 flex flex-col items-center">
-              <p className="text-white font-bold text-center uppercase tracking-widest text-xs">Featured Moment</p>
-            </div>
+
+
           </motion.div>
 
-          {/* Chat bubble decorative element (like in the screenshot) */}
-          <motion.div
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ type: "spring", stiffness: 200, delay: 0.8 }}
-            className="absolute -right-6 bottom-16 w-16 h-16 bg-[#F97316] rounded-full flex items-center justify-center shadow-lg z-30"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-            </svg>
-          </motion.div>
+
         </div>
       </div>
     </section>
