@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Left Column - Brand & About */}
           <div className="flex flex-col">
             <a href="/" className="flex items-center gap-3 mb-6">
-              <span className="text-white font-black text-2xl leading-none tracking-widest uppercase">TAM ADDISS</span>
+              <span className="text-white font-black text-2xl leading-none tracking-widest uppercase">TAMADISS</span>
             </a>
             <p className="text-white/60 leading-relaxed font-medium max-w-[90%] md:max-w-sm mb-10 text-sm md:text-base">
               A full-service digital marketing powerhouse in Ethiopia. We blend cinematic production with strategic growth to make your brand impossible to ignore.
@@ -85,7 +85,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-white/30 text-[10px] md:text-xs font-medium tracking-[0.15em] uppercase text-center">
-            © {new Date().getFullYear()} TAM ADDISS. ALL RIGHTS RESERVED.
+            © {new Date().getFullYear()} TAMADISS. ALL RIGHTS RESERVED.
           </p>
           <div className="flex items-center gap-6 md:gap-8">
             <a href="#" className="text-white/30 hover:text-white text-[10px] md:text-xs font-medium tracking-[0.15em] uppercase transition-colors">Privacy Policy</a>

@@ -13,12 +13,12 @@ export default function ImageCardSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-7xl md:text-[100px] lg:text-[130px] font-black leading-[0.9] tracking-tighter text-white mb-6 uppercase"
+            className="text-5xl md:text-7xl lg:text-[90px] font-black leading-[0.9] tracking-tighter text-white mb-6 uppercase"
           >
-            THE <br />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FF7A59] to-[#F97316]">STARS</span> <br />
-            BEHIND <br />
-            TAM ADDISS.
+            Crafted <br />
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FF7A59] to-[#F97316]">Moments</span> <br />
+            by <br />
+            Tamaddis
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -41,7 +41,17 @@ export default function ImageCardSection() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="w-[280px] h-[500px] bg-zinc-800 rounded-[2.5rem] relative overflow-hidden flex flex-col shadow-2xl z-10"
           >
-            <div className="absolute inset-0 bg-zinc-700 animate-pulse" /> {/* Placeholder for image */}
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover"
+              src="https://res.cloudinary.com/dkceowz64/video/upload/v1774349693/leftcard_tzplzn.mov"
+            />
+            {/* Gradient overlay for text legibility */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20" />
+            
             <div className="absolute bottom-6 left-6 right-6 z-20">
               <div className="w-12 h-1 bg-[#F97316] mb-3" />
               <p className="text-white font-semibold tracking-wider text-sm uppercase">Cinematic Dept.</p>
@@ -56,9 +66,19 @@ export default function ImageCardSection() {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="w-[280px] h-[500px] bg-zinc-800 rounded-[2.5rem] relative overflow-hidden flex flex-col shadow-2xl mt-24"
           >
-            <div className="absolute inset-0 bg-zinc-600 animate-pulse" /> {/* Placeholder for image */}
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover"
+              src="https://res.cloudinary.com/dkceowz64/video/upload/v1774349454/rightcard_nljkuw.mov"
+            />
+            {/* Gradient overlay for text legibility */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-transparent" />
+            
             <div className="absolute top-8 left-0 right-0 z-20 flex flex-col items-center">
-              <p className="text-white font-bold text-center">Image Placeholder</p>
+              <p className="text-white font-bold text-center uppercase tracking-widest text-xs">Featured Moment</p>
             </div>
           </motion.div>
 

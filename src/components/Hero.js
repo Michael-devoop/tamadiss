@@ -12,7 +12,7 @@ export default function Hero() {
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-fill"
+          className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="https://res.cloudinary.com/dkceowz64/video/upload/v1774009758/herov2_frdnar.mov" type="video/quicktime" />
           <source src="https://res.cloudinary.com/dkceowz64/video/upload/v1774009758/herov2_frdnar.mov" type="video/mp4" />
@@ -35,7 +35,7 @@ export default function Hero() {
             TAM
           </h1>
           <h1 className="text-[80px] sm:text-[100px] md:text-[120px] lg:text-[140px] font-black leading-[0.85] tracking-tighter uppercase text-[#F97316]">
-            ADDISS
+            ADISS
           </h1>
         </motion.div>
 

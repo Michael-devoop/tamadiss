@@ -83,7 +83,7 @@ export default function LocationSection() {
             
             {/* Tooltip */}
             <div className="absolute top-1/2 left-full ml-4 -translate-y-1/2 whitespace-nowrap bg-black/60 backdrop-blur-md border border-white/10 px-4 py-2 rounded-lg pointer-events-none">
-              <span className="text-white/90 text-xs font-bold tracking-widest uppercase">TAM ADDISS</span>
+              <span className="text-white/90 text-xs font-bold tracking-widest uppercase">TAMADISS</span>
             </div>
           </div>
         </motion.div>

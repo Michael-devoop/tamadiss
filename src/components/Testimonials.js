@@ -7,7 +7,7 @@ import useEmblaCarousel from "embla-carousel-react";
 const testimonials = [
   {
     quote:
-      "TAM ADDISS transformed our entire brand presence. The attention to detail and creative direction exceeded every expectation we had.",
+      "TAMADISS transformed our entire brand presence. The attention to detail and creative direction exceeded every expectation we had.",
     name: "Sarah Chen",
     role: "CEO, NovaTech",
     initials: "SC",
