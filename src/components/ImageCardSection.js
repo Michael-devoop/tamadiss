@@ -46,9 +46,13 @@ export default function ImageCardSection() {
               loop
               muted
               playsInline
+              preload="auto"
+              poster="https://res.cloudinary.com/dkceowz64/video/upload/so_0,f_jpg,w_560,q_70/v1774349693/leftcard_tzplzn.jpg"
               className="absolute inset-0 w-full h-full object-cover"
-              src="https://res.cloudinary.com/dkceowz64/video/upload/v1774349693/leftcard_tzplzn.mov"
-            />
+            >
+              <source src="https://res.cloudinary.com/dkceowz64/video/upload/f_webm,q_auto/v1774349693/leftcard_tzplzn.webm" type="video/webm" />
+              <source src="https://res.cloudinary.com/dkceowz64/video/upload/f_mp4,q_auto/v1774349693/leftcard_tzplzn.mp4" type="video/mp4" />
+            </video>
             {/* Gradient overlay for text legibility */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20" />
 
@@ -68,9 +72,13 @@ export default function ImageCardSection() {
               loop
               muted
               playsInline
+              preload="auto"
+              poster="https://res.cloudinary.com/dkceowz64/video/upload/so_0,f_jpg,w_560,q_70/v1774367483/rightcard_nljkuw.jpg"
               className="absolute inset-0 w-full h-full object-cover"
-              src="https://res.cloudinary.com/dkceowz64/video/upload/v1774367483/rightcard_nljkuw.mov"
-            />
+            >
+              <source src="https://res.cloudinary.com/dkceowz64/video/upload/f_webm,q_auto/v1774367483/rightcard_nljkuw.webm" type="video/webm" />
+              <source src="https://res.cloudinary.com/dkceowz64/video/upload/f_mp4,q_auto/v1774367483/rightcard_nljkuw.mp4" type="video/mp4" />
+            </video>
             {/* Gradient overlay for text legibility */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-transparent" />
 

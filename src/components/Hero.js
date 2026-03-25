@@ -12,10 +12,13 @@ export default function Hero() {
           loop
           muted
           playsInline
+          preload="auto"
+          fetchPriority="high"
+          poster="https://res.cloudinary.com/dkceowz64/video/upload/so_0,f_jpg,w_1280,q_70/v1774009758/herov2_frdnar.jpg"
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="https://res.cloudinary.com/dkceowz64/video/upload/v1774009758/herov2_frdnar.mov" type="video/quicktime" />
-          <source src="https://res.cloudinary.com/dkceowz64/video/upload/v1774009758/herov2_frdnar.mov" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dkceowz64/video/upload/f_webm,q_auto/v1774009758/herov2_frdnar.webm" type="video/webm" />
+          <source src="https://res.cloudinary.com/dkceowz64/video/upload/f_mp4,q_auto/v1774009758/herov2_frdnar.mp4" type="video/mp4" />
         </video>
         {/* Dark vignette overlay similar to design */}
         <div className="absolute inset-0 bg-black/40" />
