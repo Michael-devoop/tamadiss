@@ -8,8 +8,6 @@ const packages = [
     name: "BASIC",
     tagline: "Growth Starter",
     desc: "Small businesses starting their digital journey.",
-    price: "50,000",
-    currency: "ETB",
     features: [
       "8 Short-Form Videos",
       "Professional Editing",
@@ -25,8 +23,6 @@ const packages = [
     badge: "MOST CHOSEN",
     tagline: "Business Standard",
     desc: "Growing brands needing consistent content.",
-    price: "70,000",
-    currency: "ETB",
     features: [
       "12 Videos",
       "Advanced Editing & Color Grading",
@@ -42,8 +38,6 @@ const packages = [
     name: "PREMIUM",
     tagline: "Enterprise Elite",
     desc: "Established entities seeking market dominance.",
-    price: "100,000",
-    currency: "ETB",
     features: [
       "16+ Premium Videos",
       "Cinematic Editing & Creative Direction",
@@ -116,10 +110,9 @@ export default function Packages() {
                 </h3>
                 <p className="text-white/50 text-xs mb-8 uppercase tracking-wider">{pkg.tagline}</p>
                 <div className="flex flex-col items-center justify-center">
-                   <h4 className="text-4xl md:text-5xl font-black text-white tracking-tighter mb-1">
-                     {pkg.price}
-                   </h4>
-                   <p className="text-white/40 text-xs font-bold tracking-[0.2em] uppercase">{pkg.currency}</p>
+                   <p className="text-2xl md:text-3xl font-black text-[#F97316] tracking-tighter">
+                     Contact Us
+                   </p>
                 </div>
               </div>
 
