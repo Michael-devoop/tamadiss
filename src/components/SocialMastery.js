@@ -120,7 +120,7 @@ const works = [
     poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370688/project14_gjpcji.jpg"
   },
 
-  // Group 4: Restaurant Video Projects (8, 10)
+  // Group 4: Coffee Shop & Restaurant Video Projects
   {
     id: 8,
     groupHeader: "Coffee Shop Video Projects",
@@ -130,17 +130,6 @@ const works = [
     video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774349559/project8_ihji0z.mp4",
     poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370688/project8_uikcsv.jpg"
   },
-  {
-    id: 10,
-    groupHeader: "Restaurant Video Projects",
-    category: "RESTAURANT",
-    title: "Atmosphere",
-    desc: "Restaurant Video Projects",
-    video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774349591/project10_yv8t0h.mp4",
-    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370690/project10_haikqu.jpg"
-  },
-
-  // Group 5: Coffee Shop Video Projects (15)
   {
     id: 15,
     groupHeader: "Coffee Shop Video Projects",
@@ -157,15 +146,6 @@ const works = [
     title: "Taste",
     desc: "Restaurant Video Projects",
     video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774355583/project16_npjd54.mp4"
-  },
-  {
-    id: 17,
-    groupHeader: "Coffee Shop Video Projects",
-    category: "COFFEE SHOP",
-    title: "Brew",
-    desc: "Coffee Shop Video Projects",
-    video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774355569/project17_rxqrye.mp4",
-    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370687/project17_surti0.jpg"
   }
 ];
 
