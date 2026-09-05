@@ -73,11 +73,12 @@ export default function ImageCardSection() {
               muted
               playsInline
               preload="auto"
-              poster="https://res.cloudinary.com/dkceowz64/video/upload/so_0,f_jpg,w_560,q_70/v1774367483/rightcard_nljkuw.jpg"
+              poster="https://res.cloudinary.com/dkceowz64/video/upload/so_0,f_jpg,w_560,q_70/v1787919911/IMG_5552_ori7yv.jpg"
               className="absolute inset-0 w-full h-full object-cover"
             >
-              <source src="https://res.cloudinary.com/dkceowz64/video/upload/f_webm,q_auto/v1774367483/rightcard_nljkuw.webm" type="video/webm" />
-              <source src="https://res.cloudinary.com/dkceowz64/video/upload/f_mp4,q_auto/v1774367483/rightcard_nljkuw.mp4" type="video/mp4" />
+              <source src="https://res.cloudinary.com/dkceowz64/video/upload/f_webm,q_auto/v1787919911/IMG_5552_ori7yv.webm" type="video/webm" />
+              <source src="https://res.cloudinary.com/dkceowz64/video/upload/f_mp4,q_auto/v1787919911/IMG_5552_ori7yv.mp4" type="video/mp4" />
+              <source src="https://res.cloudinary.com/dkceowz64/video/upload/v1787919911/IMG_5552_ori7yv.mp4" type="video/mp4" />
             </video>
             {/* Gradient overlay for text legibility */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-transparent" />

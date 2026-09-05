@@ -145,7 +145,17 @@ const works = [
     category: "RESTAURANT",
     title: "Taste",
     desc: "Restaurant Video Projects",
-    video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774355583/project16_npjd54.mp4"
+    video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774355583/project16_npjd54.mp4",
+    poster: "https://res.cloudinary.com/dkceowz64/video/upload/so_0,f_jpg,w_560,q_70/v1774355583/project16_npjd54.jpg"
+  },
+  {
+    id: 17,
+    groupHeader: "Restaurant Video Projects",
+    category: "RESTAURANT",
+    title: "Culinary",
+    desc: "Restaurant Video Projects",
+    video: "https://res.cloudinary.com/dkceowz64/video/upload/v1787919911/IMG_5551_tyvs7n.mp4",
+    poster: "https://res.cloudinary.com/dkceowz64/video/upload/so_0,f_jpg,w_560,q_70/v1787919911/IMG_5551_tyvs7n.jpg"
   }
 ];
 
