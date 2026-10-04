@@ -6,7 +6,27 @@ import { Play } from "lucide-react";
 
 // Helper strictly for order. We'll group them dynamically in the component.
 const works = [
-  // Group 1: Featured Campaigns (projects 1-6)
+  // Group: Marketing Video
+  {
+    id: 3,
+    groupHeader: "Marketing Video",
+    category: "MARKETING",
+    title: "Careers",
+    desc: "A showcase of our most successful jobs",
+    video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774012985/project3_1_gzwmvz.mp4",
+    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370699/project3_tpfqym.jpg"
+  },
+  {
+    id: 7,
+    groupHeader: "Marketing Video",
+    category: "MARKETING",
+    title: "Identity",
+    desc: "Marketing Video Projects",
+    video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774350582/project7_c2yqiw.mov",
+    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370690/project7_oyxxtm.jpg"
+  },
+
+  // Group 1: Featured Campaigns (projects 1, 2, 4, 5, 6)
   {
     id: 1,
     groupHeader: "Product Video Projects",
@@ -24,15 +44,6 @@ const works = [
     desc: "Well Known Cosmetics Industries",
     video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774010475/project2_bvxae5.mp4",
     poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370698/project2_h1p7fg.jpg"
-  },
-  {
-    id: 3,
-    groupHeader: "Featured Campaigns",
-    category: "JOB APPLICATIONS",
-    title: "Careers",
-    desc: "A showcase of our most successful jobs",
-    video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774012985/project3_1_gzwmvz.mp4",
-    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370699/project3_tpfqym.jpg"
   },
   {
     id: 4,
@@ -62,16 +73,7 @@ const works = [
     poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370699/project6_fg976n.jpg"
   },
 
-  // Group 2: Catering Brand Video Projects (7, 9, 11)
-  {
-    id: 7,
-    groupHeader: "Catering Brand Video Projects",
-    category: "CATERING",
-    title: "Identity",
-    desc: "Catering Brand Video Projects",
-    video: "https://res.cloudinary.com/dkceowz64/video/upload/v1774350582/project7_c2yqiw.mov",
-    poster: "https://res.cloudinary.com/dkceowz64/image/upload/v1774370690/project7_oyxxtm.jpg"
-  },
+  // Group 2: Catering Brand Video Projects (9, 11)
   {
     id: 9,
     groupHeader: "Catering Brand Video Projects",
