@@ -1,25 +1,88 @@
 "use client";
 
+import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 
 export default function Hero() {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const containerRef = useRef(null);
+  const videoRef = useRef(null);
+
+  const posterUrl = "https://res.cloudinary.com/dkceowz64/video/upload/so_0,f_jpg,q_auto,w_1920/v1791144335/IMG_5946_v8sfz8.jpg";
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    // Viewport-based lazy play/pause to conserve network bandwidth and GPU performance
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <section className="relative min-h-screen flex flex-col items-start justify-center overflow-hidden px-6 md:px-16 lg:px-24">
-      {/* Video Background */}
-      <div className="absolute inset-0">
+    <section 
+      ref={containerRef}
+      className="relative min-h-screen flex flex-col items-start justify-center overflow-hidden px-6 md:px-16 lg:px-24"
+    >
+      {/* Video Background with Optimized Lazy Loading */}
+      <div className="absolute inset-0 bg-[#0D0D0D]">
+        {/* Instant Poster image for zero load delay */}
+        <img
+          src={posterUrl}
+          alt="TAM ADDIS Hero Poster"
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+            isLoaded ? "opacity-0" : "opacity-100"
+          }`}
+          loading="eager"
+          fetchPriority="high"
+        />
+
+        {/* Cloudinary Stream-Optimized Video */}
         <video
+          ref={videoRef}
           autoPlay
           loop
           muted
           playsInline
-          preload="metadata"
-          className="absolute inset-0 w-full h-full object-cover"
-          src="https://res.cloudinary.com/dkceowz64/video/upload/v1774350582/project7_c2yqiw.mov"
+          preload="auto"
+          poster={posterUrl}
+          onCanPlay={() => setIsLoaded(true)}
+          onPlaying={() => setIsLoaded(true)}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+            isLoaded ? "opacity-100" : "opacity-0"
+          }`}
         >
-          <source src="https://res.cloudinary.com/dkceowz64/video/upload/f_auto,q_auto/v1774350582/project7_c2yqiw.mp4" type="video/mp4" />
-          <source src="https://res.cloudinary.com/dkceowz64/video/upload/v1774350582/project7_c2yqiw.mov" type="video/quicktime" />
+          <source
+            src="https://res.cloudinary.com/dkceowz64/video/upload/f_webm,q_auto/v1791144335/IMG_5946_v8sfz8.webm"
+            type="video/webm"
+          />
+          <source
+            src="https://res.cloudinary.com/dkceowz64/video/upload/f_auto,q_auto/v1791144335/IMG_5946_v8sfz8.mp4"
+            type="video/mp4"
+          />
+          <source
+            src="https://res.cloudinary.com/dkceowz64/video/upload/v1791144335/IMG_5946_v8sfz8.mov"
+            type="video/quicktime"
+          />
         </video>
-        {/* Dark vignette overlay similar to design */}
+
+        {/* Dark vignette overlay */}
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0D0D0D]/90 via-[#0D0D0D]/40 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0D] via-transparent to-[#0D0D0D]/30" />
